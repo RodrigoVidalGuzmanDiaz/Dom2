@@ -1,4 +1,6 @@
-let user = [
+
+
+let users = [
   /*ID_de_usuario*/ /*nombre_usuario*/  /*contraseña*/  /*nombre_completo*/             /*dirección*/                   /*correo_electronico*/           /*telefono*/
     [100,           'anna0',            'white00',      'Anna Addison',     '1325 Candy Rd, San Francisco, CA 96123',   'anna.addison@yahoo.com',       '3841019535'],
     [101,           'carol1',           'orange01',     'Carol Campbell',   '1931 Brown St, Gainesville, FL 85321',     'carol.campbell@aol.com',       '2548952651'],
@@ -11,22 +13,46 @@ let user = [
 ];
   
   
-  let usuario = 0;
+  let posicion = 0;
   let title = document.querySelector('#cj-titulo_texto');
-  title.innerHTML = user[usuario][1];
+  let derecha = document.getElementById('derecha')
+  let izquierda = document.getElementById('izquierda')
+  title.innerHTML = users[posicion][1];
   
   function siguiente(){
-    if(usuario <= 6){
-      usuario++;
+    if(posicion <= 6){
+      posicion++;
     }
-    title.innerHTML = user[usuario][1];
-  }
+    title.innerHTML = users[posicion][1];
+  };
   
   function anterior(){
-      if(usuario >= 1){
-        usuario--;
+      if(posicion >= 1){
+        posicion--;
       }
   
-      title.innerHTML = user[usuario][1];
+      title.innerHTML = users[posicion][1];
   
-  }
+  };
+  derecha.addEventListener('click', siguiente)
+  izquierda.addEventListener('click', anterior)
+  
+
+
+  import { user_ob } from "./user.js";
+
+  let bt_ver = document.getElementById('bt_ver')
+
+
+function verInfo(){
+    
+     root.innerHTML = '<ul style="font-size: 3rem;display: flex;flex-direction: column;justify-content: center; list-style: none;">' + 
+                         '<li>' + user_ob[posicion].id + '</li>' + 
+                         '<li>' + user_ob[posicion].nickname + '</li>' + 
+                         '<li>' + user_ob[posicion].name + '</li>' + 
+                         '<li>' + user_ob[posicion].addres + '</li>' + 
+                         '<li>' + user_ob[posicion].email + '</li>' + 
+                         '<li>' + user_ob[posicion].phone + '</li>' + 
+                     '</ul>';
+ }
+ bt_ver.addEventListener('click', verInfo)

@@ -1,4 +1,5 @@
-let usuarios =[ {
+export let user_ob  =[ 
+    {
         id: 100, 
         nickname:'anna0', 
         password:'white00', 

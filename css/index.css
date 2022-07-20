@@ -2,7 +2,6 @@
     /*background-color: red;*/
     width: 650px;
     height: 500px;
-    margin: auto;
     border: solid;
     border-color: black;
 
@@ -16,14 +15,11 @@
     width: 300px;
     height: 7rem;
 
-    border: solid;
-    border-color: black;
-
-    border: 2px solid black;
-
-    font-size: 2rem;
+    border: 5px solid black;
+    font-size: 3rem;
     text-align: center;
     padding: 1rem;
+
 }
 .botones{
     display: flex;
@@ -46,6 +42,19 @@
 }
 .programas_bt img{
     width: 4rem;
+}
+
+.bt_ver{
+    background-color: green;
+    width: 15rem;
+    height: 7rem;
+    border: 5px solid #000;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+
 }
 
 

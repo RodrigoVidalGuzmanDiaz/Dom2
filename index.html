@@ -6,25 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/configuracion.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/root.css">
+
     <title>Programa</title>
 </head>
 <body>
-    <div class="programa">
-        <div class="programa_cj-titulo">
-            <span class="cj-titulo_texto" id="cj-titulo_texto">
 
-            </span>
+    <section class="seccion">
+        <div class="programa">
+            <div class="programa_cj-titulo">
+                <span class="cj-titulo_texto" id="cj-titulo_texto">
+                </span>
+            </div>
+            <div class="botones">
+                <div id="izquierda" class="programas_bt">
+                    <img src="https://github.com/RodrigoVidalGuzmanDiaz/IMAGES/blob/main/simbolo-bruto-grande-del-angulo-de-la-flecha-izquierda.png?raw=true">
+                </div>
+                <div id="derecha" class="programas_bt">
+                    <img src="https://github.com/RodrigoVidalGuzmanDiaz/IMAGES/blob/main/flecha-correcta.png?raw=true">
+                </div>
+            </div>
+            <div class="bt_ver" id="bt_ver">
+                ver
+            </div>
         </div>
-        <div class="botones">
-            <button id="derecha" class="programas_bt"  onclick="anterior()">
-                <img src="https://github.com/RodrigoVidalGuzmanDiaz/IMAGES/blob/main/simbolo-bruto-grande-del-angulo-de-la-flecha-izquierda.png?raw=true">
-            </button>
-            <button id="izquierda" class="programas_bt" onclick="siguiente()">
-                <img src="https://github.com/RodrigoVidalGuzmanDiaz/IMAGES/blob/main/flecha-correcta.png?raw=true">
-            </button>
+        
+        <div id="root">
+            <!--Información del usuario-->
         </div>
-    </div>
-    <script src="./js/main.js"></script>
-    <script src="./js/user.js"></script>
+    </section>
+    <script src="./js/main.js" type="module"></script>
 </body>
 </html>
