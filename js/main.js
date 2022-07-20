@@ -47,12 +47,12 @@ let users = [
 function verInfo(){
     
      root.innerHTML = '<ul style="font-size: 3rem;display: flex;flex-direction: column;justify-content: center; list-style: none;">' + 
-                         '<li>' + user_ob[posicion].id + '</li>' + 
-                         '<li>' + user_ob[posicion].nickname + '</li>' + 
-                         '<li>' + user_ob[posicion].name + '</li>' + 
-                         '<li>' + user_ob[posicion].addres + '</li>' + 
-                         '<li>' + user_ob[posicion].email + '</li>' + 
-                         '<li>' + user_ob[posicion].phone + '</li>' + 
+                         '<li>'+'id: '      + user_ob[posicion].id + '</li>' + 
+                         '<li>'+'nickname: '+ user_ob[posicion].nickname + '</li>' + 
+                         '<li>'+'name: '    + user_ob[posicion].name + '</li>' + 
+                         '<li>'+'addres: '  + user_ob[posicion].addres + '</li>' + 
+                         '<li>'+'email: '   + user_ob[posicion].email + '</li>' + 
+                         '<li>'+'phone: '   + user_ob[posicion].phone + '</li>' + 
                      '</ul>';
  }
  bt_ver.addEventListener('click', verInfo)
